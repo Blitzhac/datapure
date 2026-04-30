@@ -1,0 +1,84 @@
+# ── Python ────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.Python
+
+# ── Virtual environment ───────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+
+# ── Build artifacts ───────────────────────────────────
+dist/
+build/
+*.egg-info/
+*.egg
+.eggs/
+MANIFEST
+
+# ── Testing & coverage ────────────────────────────────
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+coverage.xml
+*.cover
+
+# ── Linting cache ─────────────────────────────────────
+.ruff_cache/
+.mypy_cache/
+
+# ── IDE & editors ─────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# ── OS junk ───────────────────────────────────────────
+Thumbs.db
+.DS_Store
+desktop.ini
+ehthumbs.db
+
+# ── Data files (never commit large datasets) ──────────
+*.csv
+*.parquet
+*.xlsx
+*.xls
+*.xlsm
+*.tsv
+*.json
+*.jsonl
+
+# ── datapure generated outputs ────────────────────────
+*_report.html
+*_cleaning_log.json
+*_clean.csv
+*_clean.parquet
+messy.csv
+clean.csv
+
+# ── Secrets & credentials ─────────────────────────────
+*.key
+*.pem
+*.cert
+*.p12
+secrets.py
+credentials.py
+
+# ── Jupyter (if you ever use notebooks) ───────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Docs build ────────────────────────────────────────
+site/
+docs/_build/
