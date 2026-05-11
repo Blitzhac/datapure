@@ -1,9 +1,18 @@
 from setuptools import setup, find_packages
 
+with open("README.md", encoding="utf-8") as f:
+    long_description = f.read()
+
 setup(
     name="datapure",
     version="0.1.0",
-    description="AI-powered data cleaning for data scientists",
+    description="AI-powered data cleaning library for data scientists",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    author="Basil Anil",
+    author_email="basilanil8@gmail.com",
+    url="https://github.com/Blitzhac/datapure",
+    license="MIT",
     python_requires=">=3.10",
     packages=find_packages(),
     install_requires=[
@@ -23,9 +32,27 @@ setup(
         "pydantic>=2.0.0",
     ],
     extras_require={
-        "dev": ["pytest", "pytest-cov", "ruff", "pre-commit"],
+        "dev": ["pytest", "pytest-cov", "ruff"],
     },
     entry_points={
-        "console_scripts": ["datapure=datapure.cli.main:cli"],
+        "console_scripts": [
+            "datapure=datapure.cli.main:cli",
+        ],
     },
+    classifiers=[
+        "Development Status :: 3 - Alpha",
+        "Intended Audience :: Science/Research",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
+        "Topic :: Scientific/Engineering :: Artificial Intelligence",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+    ],
+    keywords=[
+        "data cleaning", "data science", "pandas", "polars",
+        "AI", "machine learning", "data quality",
+    ],
 )
